@@ -52,3 +52,11 @@ fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&que
     `      
     })
     .catch(err => console.error(err))
+
+//Set up the clock
+function getCurrentTime() {
+    const date = new Date()
+    document.getElementById("time").textContent = date.toLocaleTimeString("en-ZA", {timeStyle: "short"})
+}
+
+setInterval(getCurrentTime, 1000)

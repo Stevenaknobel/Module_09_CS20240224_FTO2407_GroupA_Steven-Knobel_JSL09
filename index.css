@@ -49,3 +49,7 @@ div#crypto-top {
 div#crypto-top > span {
     margin-left: 10px;
 }
+
+#time {
+    font-size: 100px;
+}
