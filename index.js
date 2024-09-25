@@ -9,4 +9,26 @@ fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&que
     document.getElementById("author").textContent = `By: ${data.user.name}`
     })
 
-//Challenge 2
+    //1. What is a promise (in your own words)?
+    //A promise that an operation that normally takes a bit of time
+    //will eventually finish running. I.O.U. (I owe you)
+
+    //2. Which part of the code we have so far is a promise?
+    //The fetch request returns a promise object.
+
+    //3. What are the three states a promise can be in?
+    //(1) Pending, (2) Resolved (fulfilled), (3) Rejected
+
+    //4. What does it mean when a promise is "resolved" (or fulfilled)?
+    //The task we wanted to perform finished successfully.
+
+    //5. How do we tell the code to do something only AFTER a
+    //   promise is resolved?
+    //.then() method
+
+    //Challenge 3
+    //create a .catch default background image incase the promise is rejected
+
+    .catch(err => {
+        document.body.style.backgroundImage = `url(https://images.unsplash.com/photo-1470104240373-bc1812eddc9f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxNDI0NzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjcyOTU1OTB8&ixlib=rb-4.0.3&q=80&w=1080)`
+    })
