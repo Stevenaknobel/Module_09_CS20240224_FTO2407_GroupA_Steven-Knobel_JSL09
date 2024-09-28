@@ -73,6 +73,7 @@ p.weather-city {
 }
 
 p.weather-temp {
+    padding-top: 20px;
     margin:0;
     font-size: 1.7rem;
     margin-left: -10px;
